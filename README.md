@@ -392,5 +392,16 @@ This implementation of the DrQA Document Reader is closely related to the one fo
 
 We plan to consolidate this model into the ParlAI interface as well, so that the reader can be interchangeably trained here or multitasked on many datasets with ParlAI.
 
+
+## Used DrQA by Docker way
+
+```
+# To run a DrQA container and mount /data directory with -v params
+docker run --name drqa --restart=always -ditP -v /data/yy/DrQA/data:/app/data hub.nat.xinktech.com/yscz/drqa:latest
+
+# Enter the container 
+docker exec -it drqa bash
+```
+
 ## License
 DrQA is BSD-licensed. We also provide an additional patent grant.
