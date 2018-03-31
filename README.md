@@ -397,7 +397,7 @@ We plan to consolidate this model into the ParlAI interface as well, so that the
 
 ```
 # To run a DrQA container and mount /data directory with -v params
-docker run --name drqa --restart=always -ditP -v /data/yy/DrQA/data:/app/data hub.nat.xinktech.com/yscz/drqa:latest
+docker run --name drqa --restart=always -ditP -v /data/CoreNLP:/opt/CoreNLP-libs -v /data/yy/DrQA/data:/app/data hub.nat.xinktech.com/yscz/drqa:latest
 
 # Enter the container 
 docker exec -it drqa bash
